@@ -17,9 +17,9 @@ struct Markov: ParsableCommand {
   var input: [String]
 
   mutating func run() throws {
-    let order = order ?? 2
-    let prior = prior ?? 0
-    let count = count ?? 10
+    let order = self.order ?? 2
+    let prior = self.prior ?? 0
+    let count = self.count ?? 10
     let markov = AndreyAndreyevich(input: input, order: order, prior: prior)
 
     for _ in 0..<count {
