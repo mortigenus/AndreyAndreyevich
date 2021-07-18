@@ -17,6 +17,7 @@ let package = Package(
     .package(url: "https://github.com/apple/swift-algorithms", from: "0.2.1"),
     .package(url: "https://github.com/apple/swift-collections", from: "0.0.4"),
     .package(name: "SnapshotTesting", url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.9.0"),
+    .package(name: "Benchmark", url: "https://github.com/google/swift-benchmark", from: "0.1.0"),
   ],
   targets: [
     .target(
@@ -30,6 +31,12 @@ let package = Package(
       dependencies: [
         "AndreyAndreyevich",
         .product(name: "ArgumentParser", package: "swift-argument-parser"),
+      ]),
+    .target(
+      name: "name-generation-benchmark",
+      dependencies: [
+        "AndreyAndreyevich",
+        "Benchmark",
       ]),
     .testTarget(
       name: "AndreyAndreyevichTests",

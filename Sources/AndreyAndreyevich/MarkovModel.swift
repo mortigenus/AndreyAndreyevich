@@ -1,5 +1,4 @@
 import Algorithms
-import Collections
 
 struct MarkovModel {
   
@@ -17,7 +16,7 @@ struct MarkovModel {
       str.windows(ofCount: order + 1).forEach { window in
         let key = window.dropLast()
         let value = window.last!
-        chains[key, default: [:]][value, default: prior] += 1
+        chains[key, default: FrequencyMap()][value, default: prior] += 1
       }
     }
   }

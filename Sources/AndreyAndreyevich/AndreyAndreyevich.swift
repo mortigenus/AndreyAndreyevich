@@ -1,5 +1,3 @@
-import Collections
-
 public struct AndreyAndreyevich {
 
   private var generator: ActualGenerator

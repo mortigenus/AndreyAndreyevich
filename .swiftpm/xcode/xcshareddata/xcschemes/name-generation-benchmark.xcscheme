@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AndreyAndreyevich"
-               BuildableName = "AndreyAndreyevich"
-               BlueprintName = "AndreyAndreyevich"
-               ReferencedContainer = "container:">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "markov"
-               BuildableName = "markov"
-               BlueprintName = "markov"
+               BlueprintIdentifier = "name-generation-benchmark"
+               BuildableName = "name-generation-benchmark"
+               BlueprintName = "name-generation-benchmark"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,20 +31,6 @@
                BlueprintIdentifier = "AndreyAndreyevichTests"
                BuildableName = "AndreyAndreyevichTests"
                BlueprintName = "AndreyAndreyevichTests"
-               ReferencedContainer = "container:">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "name-generation-benchmark"
-               BuildableName = "name-generation-benchmark"
-               BlueprintName = "name-generation-benchmark"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -83,7 +55,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -102,15 +74,6 @@
             ReferencedContainer = "container:">
          </BuildableReference>
       </BuildableProductRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "markov"
-            BuildableName = "markov"
-            BlueprintName = "markov"
-            ReferencedContainer = "container:">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

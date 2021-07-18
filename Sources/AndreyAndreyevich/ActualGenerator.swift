@@ -18,20 +18,20 @@ struct ActualGenerator {
   func generate<T: RandomNumberGenerator>(
     using randomGenerator: inout T
   ) -> String {
-    var word = Substring(repeating: "^", count: order)
+    var word = Array(repeating: ("^" as Character), count: order)
 
     while word.last != "$" {
-      guard let letter = nextLetter(for: word, using: &randomGenerator) else {
+      guard let letter = nextLetter(for: String(word), using: &randomGenerator) else {
         continue
       }
       word.append(letter)
     }
 
-    return String(word.filter { $0 != "^" && $0 != "$" })
+    return String(word.dropFirst(order).dropLast())
   }
 
   private func nextLetter<T: RandomNumberGenerator>(
-    for word: Substring,
+    for word: String,
     using randomGenerator: inout T
   ) -> Character? {
     var context = word.suffix(order)
